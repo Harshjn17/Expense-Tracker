@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: mediumpurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+#heading{
+  margin-bottom: 35px;
+}
+
+#balance-container{
+  text-align: start;
+  margin-bottom: 25px;
+}
+
+#balance-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+}
+
+#income-box{
+  width: 50%;
+}
+
+#income-box h4{
+  margin-bottom: 3px;
+}
+
+#expense-box{
+  width: 50%;
+  border-left: 1px solid grey;
+}
+
+#expense-box h4{
+  margin-bottom: 3px;
+}
+
+#history-section{
+  padding-bottom: 10px;
+}
+
+#history-line{
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+#history-line p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#line{
+  height: 1px;
+  width: 100%;
+  background-color: mediumpurple;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#cards{
+  width: 100%;
+}
+
+#card{
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#card p{
+  font-weight: 500;
+}
+
+#add-form{
+  text-align: start;
+  padding-bottom: 10px;
+}
+
+#add-form-line{
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+#add-form-line p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#form{
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#form p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.inp{
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid mediumpurple;
+  margin-bottom: 7px;
+}
+
+#radio-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#space{
+  margin-bottom: 20px;
+}
+
+#radio1,
+#radio2{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+#radio1,
+#radio2 label{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#btn{
+  width: 100%;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: mediumpurple;
+  border: none;
+}
+
+#check{
+  display: none;
+  height: 100%;
+  width: 6%;
+  border-radius: 50%;
+}
