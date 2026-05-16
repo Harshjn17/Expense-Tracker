@@ -1,73 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expense Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Theme Toggle -->
+  <div class="theme-changer">🌙</div>
+
+  <!-- Start Screen -->
+  <div class="startScreen">
+    <p>Balance</p>
+
+    <input
+      id="balance"
+      type="number"
+      placeholder="Enter your Balance"
+    >
+
+    <button id="addBalance">
+      Add Balance
+    </button>
+  </div>
+
+
+  <!-- Main Container -->
   <div class="container">
+
+    <!-- Heading -->
     <div id="heading">
-       <h1>Expense Tracker</h1>
+      <h1>Expense Tracker</h1>
     </div>
-    <!--BALANCE -->
+
+
+    <!-- Balance -->
     <div id="balance-container">
       <h3>YOUR BALANCE</h3>
-      <h1>₹1,250.00</h1>
+      <h1 id="balance-amount">₹0</h1>
     </div>
-    <!--BALANCE-CARD -->
+
+
+    <!-- Income Expense -->
     <div id="balance-card">
+
       <div id="income-box">
         <h4>INCOME</h4>
-        <h2>₹2,300.00</h2>
+        <h2 id="income-amount">
+          ₹0
+        </h2>
       </div>
+
       <div id="expense-box">
         <h4>EXPENSE</h4>
-        <h2>₹1,050.00</h2>
+        <h2 id="expense-amount">
+          ₹0
+        </h2>
       </div>
+
     </div>
-    <!--HISTROY SECTION -->
+
+
+    <!-- History -->
     <div id="history-section">
+
       <div id="history-line">
         <p>History</p>
       </div>
+
       <div id="line"></div>
-        <div id="cards">
-          <div id="card">
-            
-          </div>
-            <div id="check"></div>
+
+      <div id="cards">
+
       </div>
-        
+
     </div>
-    <!--Add transction form-->
+
+
+    <!-- Add Transaction -->
     <div id="add-form">
+
       <div id="add-form-line">
         <p>Add new transaction</p>
       </div>
+
       <div id="line"></div>
+
+
       <div id="form">
+
         <p>Title</p>
-        <input id="inp1" class="inp" placeholder="Enter title...">
+
+        <input
+        id="inp1"
+        class="inp"
+        placeholder="Enter title..."
+        >
+
         <p>Amount</p>
-        <input id="space" type="number" class="inp" placeholder="Enter amount...">
-        <br/>
+
+        <input
+        id="space"
+        class="inp"
+        type="number"
+        placeholder="Enter amount..."
+        >
+
+
         <div id="radio-btn">
+
           <div id="radio1">
-            <input type="radio" id="income" name="transaction" value="income">
-            <label for="income">Income</label>
+
+            <input
+            type="radio"
+            id="income"
+            name="transaction"
+            value="income"
+            >
+
+            <label for="income">
+              Income
+            </label>
+
           </div>
+
+
           <div id="radio2">
-            <input type="radio" id="expense" name="transaction" value="expense">
-            <label for="expense">Expense</label>
+
+            <input
+            type="radio"
+            id="expense"
+            name="transaction"
+            value="expense"
+            >
+
+            <label for="expense">
+              Expense
+            </label>
+
           </div>
+
         </div>
-        <button id="btn">Add transaction</button>
+
+
+        <button id="btn">
+          Add Transaction
+        </button>
+
       </div>
+
     </div>
+
   </div>
-  
+
   <script src="script.js"></script>
+
 </body>
 </html>
