@@ -14,7 +14,6 @@ body{
 }
 
 body{
-  background-color: mediumpurple;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +28,7 @@ body{
   max-width: 600px;
   padding: 20px;
   text-align: center;
+  display: none;
 }
 
 #heading{
@@ -60,7 +60,7 @@ body{
 
 #expense-box{
   width: 50%;
-  border-left: 1px solid grey;
+  border-left: 1px solid black;
 }
 
 #expense-box h4{
@@ -85,7 +85,7 @@ body{
 #line{
   height: 1px;
   width: 100%;
-  background-color: mediumpurple;
+  background-color: black;
   border-radius: 20px;
   margin-bottom: 20px;
 }
@@ -142,7 +142,7 @@ body{
   padding: 5px;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid mediumpurple;
+  border: 1px solid black;
   margin-bottom: 7px;
 }
 
@@ -178,7 +178,7 @@ body{
   font-size: 1rem;
   border-radius: 5px;
   color: white;
-  background-color: mediumpurple;
+  background-color: black;
   border: none;
 }
 
@@ -187,4 +187,104 @@ body{
   height: 100%;
   width: 6%;
   border-radius: 50%;
+}
+
+.startScreen{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.startScreen p{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.startScreen input{
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.startScreen button{
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+}
+
+body{
+  background-color:#f3f4f6;
+  color:black;
+}
+
+.container,
+.startScreen{
+  background-color:white;
+}
+
+.theme-changer{
+  position:absolute;
+  top:3%;
+  right:25px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid black;
+  cursor:pointer;
+  background:white;
+}
+
+
+/* DARK MODE */
+
+.dark{
+  background-color:black;
+  color:white;
+}
+
+.dark .theme-changer{
+  border:1px solid white;
+  background:#111;
+}
+
+.dark .container,
+.dark .startScreen{
+  background:#1b1b1b;
+  color:white;
+}
+
+.dark #balance-card,
+.dark #form,
+.dark #card{
+  background:#252525;
+  box-shadow:none;
+}
+
+.dark .inp,
+.dark .startScreen input{
+  background:#333;
+  color:white;
+  border:1px solid #666;
+}
+
+.dark #btn,
+.dark .startScreen button{
+  background:white;
+  color:black;
+}
+
+.dark #expense-box{
+  border-left:1px solid white;
+}
+
+.dark #line{
+  background:white;
 }
